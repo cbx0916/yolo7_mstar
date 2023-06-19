@@ -537,7 +537,7 @@ resume
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', type=str, default='yolov7-e6e.pt', help='initial weights path')
+    parser.add_argument('--weights', type=str, default='/kaggle/input/yolov7-e6e/yolov7-e6e.pt', help='initial weights path')
     # parser.add_argument('--weights', type=str, default='yolov7-d6.pt', help='initial weights path')
     # parser.add_argument('--weights', type=str, default='yolov7-e6.pt', help='initial weights path')
     # parser.add_argument('--weights', type=str, default='yolov7-w6.pt', help='initial weights path')
