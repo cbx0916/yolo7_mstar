@@ -11,12 +11,12 @@ from utils.datasets import LoadImagesAndLabels
 from utils.datasets import img2label_paths
 from utils.general import colorstr, xywh2xyxy, check_dataset
 
-# try:
-#     import wandb
-#     from wandb import init, finish
-# except ImportError:
-#     wandb = None
-# wandb = None
+try:
+    import wandb
+    from wandb import init, finish
+except ImportError:
+    wandb = None
+
 WANDB_ARTIFACT_PREFIX = 'wandb-artifact://'
 
 
@@ -82,7 +82,6 @@ class WandbLogger():
         # Pre-training routine --
         self.job_type = job_type
         self.wandb, self.wandb_run, self.data_dict = wandb, None if not wandb else wandb.run, data_dict
-        # self.wandb, self.wandb_run, self.data_dict = None, None if not wandb else wandb.run, data_dict
         # It's more elegant to stick to 1 wandb.init call, but useful config data is overwritten in the WandbLogger's wandb.init call
         if isinstance(opt.resume, str):  # checks resume from artifact
             if opt.resume.startswith(WANDB_ARTIFACT_PREFIX):
