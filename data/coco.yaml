@@ -12,9 +12,9 @@
 #val: E:/Project/Python_Prj/yolov7-main/data/images/val  # 5000 images
 #test: E:/Project/Python_Prj/yolov7-main/data/images/val  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
 
-train: ./kaggle/input/mstar-detection/images/train
-val: ./kaggle/input/mstar-detection/images/val  # 5000 images
-test: ./kaggle/input/mstar-detection/images/val  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+train: /kaggle/input/mstar-detection/images/train
+val: /kaggle/input/mstar-detection/images/val  # 5000 images
+test: /kaggle/input/mstar-detection/images/val  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
 
 # number of classes
 #nc: 8
