@@ -537,7 +537,7 @@ resume
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', type=str, default='/kaggle/input/yolov7-e6e/yolov7-e6e.pt', help='initial weights path')
+    parser.add_argument('--weights', type=str, default='yolov7-e6e/yolov7-e6e.pt', help='initial weights path')
     # parser.add_argument('--weights', type=str, default='yolov7-d6.pt', help='initial weights path')
     # parser.add_argument('--weights', type=str, default='yolov7-e6.pt', help='initial weights path')
     # parser.add_argument('--weights', type=str, default='yolov7-w6.pt', help='initial weights path')
@@ -545,8 +545,8 @@ if __name__ == '__main__':
     # parser.add_argument('--weights', type=str, default='yolov7.pt', help='initial weights path')
     # parser.add_argument('--weights', type=str, default='./runs/MSTAR/train/exp8/weights/epoch_399.pt', help='initial weights path')
     parser.add_argument('--cfg', type=str, default='', help='model.yaml path')
-    parser.add_argument('--data', type=str, default='/kaggle/input/yolo7-mstar-git/data/coco.yaml', help='data.yaml path')
-    parser.add_argument('--hyp', type=str, default='/kaggle/input/yolo7-mstar-git/data/hyp.scratch.p5.yaml', help='hyperparameters path')
+    parser.add_argument('--data', type=str, default='data/coco.yaml', help='data.yaml path')
+    parser.add_argument('--hyp', type=str, default='data/hyp.scratch.p5.yaml', help='hyperparameters path')
     # parser.add_argument('--hyp', type=str, default='./runs/MSTAR/train/epx9/hyp.yaml', help='hyperparameters path')
     parser.add_argument('--epochs', type=int, default=500)
     parser.add_argument('--batch-size', type=int, default=4, help='total batch size for all GPUs')
